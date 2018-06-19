@@ -1,18 +1,18 @@
 @font-face {
-    font-family: Raleway;
-    src: "raleway-medium.ttf";
+    font-family: 'Raleway', sans-serif;
+    src: "https://fonts.googleapis.com/css?family=Raleway:500";
     font-weight: normal;
 }
 
 @font-face {
-    font-family: Raleway;
-    src: "raleway-bold.ttf";
+    font-family: 'Raleway', sans-serif;
+    src: "https://fonts.googleapis.com/css?family=Raleway:700";
     font-weight: bolder;
 }
 
 @font-face {
-    font-family: Raleway;
-    src: "raleway-semibold.ttf";
+    font-family: 'Raleway', sans-serif;
+    src: "https://fonts.googleapis.com/css?family=Raleway:600";
     font-weight: bold;
 }
 
