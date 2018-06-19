@@ -320,8 +320,14 @@ body {
 .modal-action {
   width: 30%;
   margin: 0 auto;
-  position: absolute;
-  bottom: 2rem;
+  position: relative;
+  bottom: 0;
+  top: 5rem;
+}
+
+.modal-footer {
+  display: grid;
+  justify-items: center;
 }
 
 .modal-action a {
