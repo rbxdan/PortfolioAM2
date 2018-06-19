@@ -92,8 +92,8 @@ $myCanvas.drawText({
 
         $myCanvas.animateLayer('skills', {
             strokeWidth: 15,
-            start: 0,
-            end: 360
+            start: -180,
+            end: 180
         }, 500)
         .setLayer('projectsButton', {
             visible: false
@@ -156,8 +156,8 @@ $myCanvas.drawText({
 
         $myCanvas.animateLayer('contact', {
             strokeWidth: 15,
-            start: 0,
-            end: 360
+            start: -90,
+            end: 270
         }, 500)
         .setLayer('skillsButton', {
             visible: false
@@ -285,8 +285,8 @@ $myCanvas.drawText({
 
         $myCanvas.animateLayer('projects', {
             strokeWidth: 15,
-            start: 0,
-            end: 360
+            start: 90,
+            end: 450
         }, 500)
         .setLayer('skillsButton', {
             visible: false
@@ -324,6 +324,8 @@ $myCanvas.drawText({
     },
     text: 'my projects'
 })
+
+//PULSATE
 
 function pulsate() {
     $myCanvas.drawArc({
