@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -29,14 +29,18 @@
       <h1>Hi, I'm Rebecca</h1>
       <p>and I'm a UX/UI designer</p>
       <p>& mobile developer</p>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
+      <div id="separator" class="circle"></div>
+      <div id="separator" class="circle"></div>
+      <div id="separator" class="circle"></div>
     </div>
 
+    <div id="homeMenu" class="pageContent">
 
-    <!-- Interactive menu -->
-    <script src="#"></script>
+      <!-- Interactive menu -->
+      <div id="menuDiv"><canvas id="myCanvas" width="666" height="339"></canvas></div>
+      
+
+    </div>
 
     <!-- Footer -->
     <div class="pageFooter">
@@ -47,6 +51,10 @@
         <li><a href="https://github.com/rbxdan/" target="_blank">Gi</a></li>
       </ul>
     </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/min/jcanvas.min.js"></script>
 
   </body>
 
