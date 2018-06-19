@@ -1,0 +1,404 @@
+@font-face {
+    font-family: Raleway;
+    src: "raleway-medium.ttf";
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: "raleway-bold.ttf";
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: "raleway-semibold.ttf";
+    font-weight: bold;
+}
+
+body {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */
+
+.topNav {
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.topNav a {
+  display: inline-block;
+  margin-left: 1.5em;
+  padding: 0.3em 0.4em;
+  text-decoration: none;
+  color: #000000;
+  float: right;
+  position: relative;
+}
+
+.topNav#title {
+  float: left;
+  position: absolute;
+}
+
+.topNav a:hover {
+  color: #3e3e3e;
+}
+
+.icon-menu {
+  display: none;
+}
+
+.topNav .closebtn {
+  display: none;
+}
+
+.currentPage {
+  border-bottom: 0.2em solid #000000;
+}
+
+/* Page heading generic */
+
+.pageHeading#content {
+  padding-top: 5em;
+}
+
+.pageHeading#home {
+  padding-top: 2em;
+}
+
+.pageHeading h1 {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.pageHeading#home p {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 0.3em;
+}
+
+/* Page body generic */
+
+.pageContent {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.pageContent ul {
+  list-style: none;
+}
+
+.pageContent#about p {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-top: 6em;
+  margin-right: 25em;
+}
+
+.pageContent#contact p {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 0.3em;
+}
+
+.pageContent#skills ul {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+
+.pageContent#skills li img {
+  padding-bottom: 7em;
+  padding-right: 4em;
+}
+
+/* Projects */
+
+.projectsList {
+  display: inline-block;
+  /* padding-left: 60px; */
+  /* padding-right: 0px; */
+}
+
+.project h2 {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.project img:hover {
+  opacity: 0.7;
+}
+
+.project {
+  padding-right: 10.5em;
+}
+
+.project button {
+  display: inline-block;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.project img {
+  width: 40em;
+  display: block;
+}
+
+.project-rectangle {
+  width: 68px;
+  height: 5px;
+  background-color: #000000;
+}
+
+/* Footer */
+
+.pageFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pageFooter h5, a {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.pageFooter ul {
+  margin-left: -2.3em;
+  margin-top: 1.5em;
+}
+
+.pageFooter a {
+  position: relative;
+  bottom: -30%;
+  color: #ffffff;
+}
+
+.pageFooter li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #000000;
+  display: inline-block;
+}
+
+/* Circles */
+
+.circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #000000;
+  display: inline-block;
+}
+
+/* Form */
+
+.form input {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 1em;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+  height: 2.5em;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  width: 36%;
+}
+
+.form textarea#form-message {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 1em;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+  height: 2.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  margin-bottom: 1em;
+  height: 200px;
+  width: 36%;
+}
+
+.form input[type="submit"] {
+  float: left;
+  width: 8%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Modals */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 2em;
+  border: 2px solid #000000;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.modal-close {
+  color: #000000;
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.modal-close:hover, .modal-close:focus {
+  color: #3e3e3e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 812px) {
+
+  .topNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 2em;
+    transition: 0.5s;
+  }
+
+  .topNav a:not(:first-child) {
+    display: block;
+    transition: 0.3s;
+    color: #ffffff;
+    clear: right;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+    padding: 0.9em;
+  }
+
+  .icon-menu {
+    float: right;
+    display: block !important;
+    color: #000000;
+  }
+
+   .topNav .closebtn {
+    display: block !important;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.3s;
+    color: #ffffff;
+    float: left;
+  }
+
+  .topNav#title {
+    float: left;
+    top: 0;
+    left: 0;
+  }
+
+  .pageHeading#home p {
+    line-height: 1em;
+  }
+
+  .pageHeading h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+  }
+
+  body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .project img {
+    width: 100%;
+    display: block;
+  }
+
+  .project {
+    padding-right: 0;
+  }
+
+  .pageContent ul {
+    padding-left: 0;
+  }
+
+  .pageContent#contact p {
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1em;
+  }
+
+  .pageContent#about p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .form textarea#form-message {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .form input[type="submit"] {
+    width: 50%;
+  }
+
+  .pageContent#skills ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
