@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/stylesheet.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -43,34 +44,34 @@
         <div class="project">
           <h2>Space Trip</h2>
           <div class="project-rectangle"></div>
-          <button id="modal-button"><img src="img/portfolio_spacetrip.png"/></button>
+          <a data-fancybox data-src="#spacetrip" href="javascript:;"><img src="img/portfolio_spacetrip.png"/></a>
         </div>
       </li>
 
       <li class="projectsList">
         <!-- Project 2 -->
         <div class="project">
-          <h2>Space Trip</h2>
+          <h2>Smart Ear</h2>
           <div class="project-rectangle"></div>
-          <button id="modal-button"><img src="img/portfolio_spacetrip.png"/></button>
+          <a data-fancybox data-src="#smartear" href="javascript:;"><img src="img/portfolio_spacetrip.png"/></a>
         </div>
       </li>
 
       <li class="projectsList">
         <!-- Project 3 -->
         <div class="project">
-          <h2>Space Trip</h2>
+          <h2>UFCine</h2>
           <div class="project-rectangle"></div>
-          <button id="modal-button"><img src="img/portfolio_spacetrip.png"/></button>
+          <a data-fancybox data-src="#ufcine" href="javascript:;"><img src="img/portfolio_spacetrip.png"/></a>
         </div>
       </li>
 
       <li class="projectsList">
         <!-- Project 4 -->
         <div class="project">
-          <h2>Space Trip</h2>
+          <h2>Nocturna</h2>
           <div class="project-rectangle"></div>
-          <button id="modal-button"><img src="img/portfolio_spacetrip.png"/></button>
+          <a data-fancybox data-src="#nocturna" href="javascript:;"><img src="img/portfolio_spacetrip.png"/></a>
         </div>
       </li>
     </ul>
@@ -81,45 +82,56 @@
 
   <!-- Project modals -->
   <!-- Modal window for Project 1 -->
-  <div class="modal" id="modal-project">
-
+  <div class="modal" id="spacetrip">
+    <div class="modal-title">Space Trip</div>
     <div class="modal-content">
-      <span class="modal-close">&times;</span>
+      <img src="img/portfolio_spacetrip.png"/>
       <p>Space Trip is an iOS addictive game.</p>
     </div>
-
+    <div class="modal-action">
+      <a href="http://itunes.com">See in AppStore</a>
+    </div>
   </div>
 
   <!-- Modal window for Project 2 -->
-  <div class="modal" id="modal-project">
-
+  <div class="modal" id="smartear">
+    <div class="modal-title">Smart Ear</div>
     <div class="modal-content">
-      <span class="modal-close">&times;</span>
+      <img src="img/portfolio_spacetrip.png"/>
       <p>Space Trip is an iOS addictive game.</p>
     </div>
-
+    <div class="modal-action">
+        <a href="http://itunes.com">See in GitHub</a>
+      </div>
   </div>
 
   <!-- Modal window for Project 3 -->
-  <div class="modal" id="modal-project">
-
+  <div class="modal" id="ufcine">
+    <div class="modal-title">UFCine</div>
     <div class="modal-content">
-      <span class="modal-close">&times;</span>
+      <img src="img/portfolio_spacetrip.png"/>
       <p>Space Trip is an iOS addictive game.</p>
     </div>
-
+    <div class="modal-action">
+        <a href="http://itunes.com">See in Github</a>
+      </div>
   </div>
 
   <!-- Modal window for Project 4 -->
-  <div class="modal" id="modal-project">
-
+  <div class="modal" id="nocturna">
+    <div class="modal-title">Nocturna</div>
     <div class="modal-content">
-      <span class="modal-close">&times;</span>
+      <img src="img/portfolio_spacetrip.png"/>
       <p>Space Trip is an iOS addictive game.</p>
     </div>
-
+    <div class="modal-action">
+        <a href="http://itunes.com">See in GitHub</a>
+      </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script> 
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
   </body>
 
   </html>
