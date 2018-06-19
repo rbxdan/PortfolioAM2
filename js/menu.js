@@ -10,6 +10,7 @@ $(document).ready(function () {
 
     $myCanvas.drawArc({
         layer: true,
+        name: 'centerCircle',
         fillStyle: 'black',
         x: $myCanvas.width()/2,
         y: $myCanvas.height()/2,
@@ -70,6 +71,44 @@ $(document).ready(function () {
             })
 
             $myCanvas.delayLayer('circle2', 400)
+
+            $myCanvas.drawArc({
+                layer: true,
+                name: 'circle3',
+                x: $myCanvas.width()/2,
+                y: $myCanvas.height()/2,
+                radius: 0,
+                strokeStyle: 'black',
+                strokeWidth: 3,
+                delay: function(layer) {
+                    $(this).animateLayer('circle3', {
+                        radius: 120
+                    }, 700, function(layer) {
+                        $myCanvas.removeLayer('circle3')
+                    })
+                }
+            })
+
+            $myCanvas.delayLayer('circle3', 200)
+
+            $myCanvas.drawArc({
+                layer: true,
+                name: 'circle4',
+                x: $myCanvas.width()/2,
+                y: $myCanvas.height()/2,
+                radius: 0,
+                strokeStyle: 'black',
+                strokeWidth: 3,
+                delay: function(layer) {
+                    $(this).animateLayer('circle4', {
+                        radius: 120
+                    }, 1000, function(layer) {
+                        $myCanvas.removeLayer('circle4')
+                    })
+                }
+            })
+
+            $myCanvas.delayLayer('circle4', 100)
             
 
             $(this).animateLayer(layer, {
@@ -120,6 +159,7 @@ $(document).ready(function () {
 
     $myCanvas.drawText({
         layer: true,
+        name: 'skillsButton',
         fromCenter: false,
         fillStyle: 'black',
         x: $myCanvas.width()/2+120,
@@ -128,11 +168,18 @@ $(document).ready(function () {
         fontFamily: 'Raleway-Medium',
         maxWidth: 105,
         align: 'left',
+        cursors: {
+            mouseover: 'pointer'
+        },
+        click: function() {
+            window.location = 'skills.html'
+        },
         text: 'my skills'
     })
 
     $myCanvas.drawText({
         layer: true,
+        name: 'contactButton',
         fromCenter: false,
         fillStyle: 'black',
         x: $myCanvas.width()/2+120,
@@ -141,11 +188,18 @@ $(document).ready(function () {
         fontFamily: 'Raleway-Medium',
         maxWidth: 105,
         align: 'left',
+        cursors: {
+            mouseover: 'pointer'
+        },
+        click: function() {
+            window.location = 'contact.html'
+        },
         text: 'contact me'
     })
 
     $myCanvas.drawText({
         layer: true,
+        name: 'aboutButton',
         fromCenter: false,
         fillStyle: 'black',
         x: $myCanvas.width()/2-210,
@@ -154,11 +208,18 @@ $(document).ready(function () {
         fontFamily: 'Raleway-Medium',
         maxWidth: 105,
         align: 'right',
+        cursors: {
+            mouseover: 'pointer'
+        },
+        click: function() {
+            window.location = 'aboutme.html'
+        },
         text: 'about me'
     })
 
     $myCanvas.drawText({
         layer: true,
+        name: 'projectsButton',
         fromCenter: false,
         fillStyle: 'black',
         x: $myCanvas.width()/2-230,
@@ -167,6 +228,13 @@ $(document).ready(function () {
         fontFamily: 'Raleway-Medium',
         maxWidth: 105,
         align: 'right',
+        cursors: {
+            mouseover: 'pointer'
+        },
+        click: function() {
+            window.location = 'projects.html'
+        },
         text: 'my projects'
     })
+
 })
