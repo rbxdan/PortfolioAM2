@@ -78,7 +78,7 @@ $myCanvas.drawText({
     x: $myCanvas.width() / 2 + 120,
     y: $myCanvas.height() / 2 - 140,
     fontSize: 30,
-    fontFamily: 'Raleway',
+    fontFamily: 'Raleway, sans-serif',
     maxWidth: 105,
     align: 'left',
     cursors: {
@@ -142,7 +142,7 @@ $myCanvas.drawText({
     x: $myCanvas.width() / 2 + 120,
     y: $myCanvas.height() / 2 + 60,
     fontSize: 30,
-    fontFamily: 'Raleway',
+    fontFamily: 'Raleway, sans-serif',
     maxWidth: 105,
     align: 'left',
     cursors: {
@@ -206,7 +206,7 @@ $myCanvas.drawText({
     x: $myCanvas.width() / 2 - 210,
     y: $myCanvas.height() / 2 + 60,
     fontSize: 30,
-    fontFamily: 'Raleway',
+    fontFamily: 'Raleway, sans-serif',
     maxWidth: 105,
     align: 'right',
     cursors: {
@@ -270,7 +270,7 @@ $myCanvas.drawText({
     x: $myCanvas.width() / 2 - 230,
     y: $myCanvas.height() / 2 - 140,
     fontSize: 30,
-    fontFamily: 'Raleway',
+    fontFamily: 'Raleway, sans-serif',
     maxWidth: 105,
     align: 'right',
     cursors: {
